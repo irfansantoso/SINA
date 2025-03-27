@@ -236,7 +236,7 @@ function editAccountingPeriod(id_period) {
             $('#end_date').val(accountingPeriodSina.end_date);
 
             // Change background color to yellow
-            $('#year, #month, #start_date').css('background-color', '#FFFF99');
+            $('#year, #month, #start_date, #end_date').css('background-color', '#FFFF99');
 
             // Change the form action to update the user and the button text
             $('#formAuthentication').attr('action', `accountingPeriodSina/update/${id_period}`);

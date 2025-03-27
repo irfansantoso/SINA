@@ -93,10 +93,10 @@ class AccountingPeriodSinaController extends Controller
     {
         // Validate the incoming request
         $request->validate([
-            'year' => $request->year,
-            'month' => $request->month,
-            'start_date' => $request->start_date,
-            'end_date' => $request->end_date
+            'year' => 'required',
+            'month' => 'required',
+            'start_date' => 'required',
+            'end_date' => 'required'
         ]);
 
         // Find the AccountingPeriodSinaModel by ID
